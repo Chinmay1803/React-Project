@@ -1,13 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import FirstComponent from './components/FirstComponent/FirstComponent';
+import { ParentDynamicComponent } from './components/ParentDynamicComponent/ParentDynamicComponent';
 
 
 function App() {
+
+
   return (
     <div className="App">
       <FirstComponent/>
       <header className="App-header">
+
+        <ParentDynamicComponent />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.

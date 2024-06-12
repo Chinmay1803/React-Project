@@ -1,9 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import ChildComponent from "./ChildComponent/ChildComponent";
 import "./FirstComponent.css";
 
 function FirstComponent() {
+
+  // hooks functions...
+  const navigate  = useNavigate();
+
   function handlerFunction() {
-    alert("Submit is called");
+    // alert("Submit is called");
+    navigate("/aboutUs");
   }
 
   function handlerNewButon() {
